@@ -6,7 +6,7 @@
   tasks:
   package:
     name:
-      - "tomcat9"
+      "tomcat9"
       state: present
     name: Download WAR to server
       copy:
