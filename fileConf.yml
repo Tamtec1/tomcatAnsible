@@ -4,11 +4,10 @@
     warRemotePath: /home/tomcat
 
   tasks:
-  package:
-    name:
-      "tomcat9"
-      state: present
-    name: Download WAR to server
+    - package:
+        name: "tomcat9"
+        state: present
+    - name: Download WAR to server
       copy:
         src: sample.war
         dest: /var/lib/tomcat9/webapps/
